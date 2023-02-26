@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fms</title>
+    <link rel="stylesheet" href="fact.css">
+    <style>
+    input[type=text] {
+        padding: 5px;
+        border: 2px solid #cccccc;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+      }
+      input[type=text]:focus {
+        border-color:black;
+      }
+    </style>
+</head>
+<body>
+    <div class="container" align="center">
+    <h1 align="center" style="color: bisque;">
+        SSSV RICE MILL</h1>
+        <h3 align="center" style="color: bisque;">
+            JUVVIGUDEM</h3>
+            <p id="demo" style="color: bisque;"></p>
+
+<script>
+const d = new Date();
+document.getElementById("demo").innerHTML = d;
+</script>
+            <hr>
+    <br><br>
+    
+    <label for="sno" style="color: bisque; position: absolute; right:200px">RATE:</label>
+    <input type="text" id="rate" style="position: absolute; right:10px">
+    <label for="sno" style="color: bisque;  position: absolute; left:150px">sno:</label>
+    <input type="text" id="sno" style="position: absolute; left:200px"><br><br>
+    <label for="branch" style="color: bisque;">Village Name:</label>
+    <input type="text" id="vlg"><br><br>
+    <label for="fname" style="color: bisque;">Farmer Name:</label>
+    <input type="text" id="name"><br><br>
+    
+    <label for="branch" style="color: bisque;">Gross Weight:</label>
+    <input type="text" id="gwgt"><br><br>
+    <label for="branch" style="color: bisque;">Commission:</label>
+    <input type="text" id="Commission"><br><br>
+    <button id="addbtn" >SAVE & PRINT</button><br><br>
+    
+    <button id="readbtn">VIEW ALL</button>
+    <script src="scripts.js" type="module"></script>
+  <p id="cont"></p>
+</div>
+</body>
+</html>
